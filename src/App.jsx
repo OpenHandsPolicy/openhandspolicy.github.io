@@ -12,7 +12,7 @@ function Main() {
         </div>
         <h1>OpenHands</h1>
         <p className="tagline">
-          _A quiet signal. A simple promise. A shared language of care._
+          <em>A quiet signal. A simple promise. A shared language of care.</em>
         </p>
       </header>
       <section>
@@ -108,7 +108,7 @@ function Main() {
         </p>
       </section>
 
-      <section>
+      {/* <section>
         <h2>💌 Want to Join?</h2>
         <p>
           This is just the beginning. You can make your own. You can share the
@@ -135,7 +135,7 @@ function Main() {
             <span>📖</span>The Story Behind OpenHands
           </a>
         </div>
-      </section>
+      </section> */}
 
       <hr />
 
