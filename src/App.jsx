@@ -1,17 +1,20 @@
 import "./App.css";
-import logo from "./assets/logo.png";
+import logo from "./assets/design.png";
+import Design from "./Design";
 
-function App() {
+function Main() {
   return (
     <div className="container">
       <header>
-        <img className="logo" src={logo} alt="OpenHands Logo" />
+        <div className="logo-wrapper" aria-hidden="false">
+          <div className="logo-gradient" aria-hidden="true" />
+          <img className="logo-img" src={logo} alt="OpenHands Logo" />
+        </div>
         <h1>OpenHands</h1>
         <p className="tagline">
           _A quiet signal. A simple promise. A shared language of care._
         </p>
       </header>
-
       <section>
         <h2>✨ What is OpenHands?</h2>
         <p className="section-intro">
@@ -111,12 +114,11 @@ function App() {
           This is just the beginning. You can make your own. You can share the
           idea. You can help us shape it.
         </p>
-
         <div className="cta-grid">
           <a className="cta-button" href="#" aria-label="Join the conversation">
             <span>💬</span>Join the conversation
           </a>
-          <a className="cta-button" href="#" aria-label="Design your pin">
+          <a className="cta-button" href="/design" aria-label="Design your pin">
             <span>🎨</span>Design your pin
           </a>
           <a className="cta-button" href="#" aria-label="Shop coming soon">
@@ -152,4 +154,10 @@ function App() {
   );
 }
 
-export default App;
+export default function App() {
+  // Basic route handling for this small site
+  if (typeof window !== "undefined" && window.location.pathname === "/design") {
+    return <Design />;
+  }
+  return <Main />;
+}
