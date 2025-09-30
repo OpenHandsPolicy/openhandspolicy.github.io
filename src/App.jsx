@@ -1,5 +1,5 @@
 import "./App.css";
-import logo from "./assets/logo.webp";
+import logo from "./assets/logo.png";
 
 function App() {
   return (
