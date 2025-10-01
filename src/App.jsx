@@ -15,13 +15,18 @@ function Main() {
           <em>A quiet signal. A simple promise. A shared language of care.</em>
         </p>
       </header>
+
       <section>
         <h2>✨ What is OpenHands?</h2>
         <p className="section-intro">
-          <strong>OpenHands is a community symbol. A wearable gesture.</strong>
+          <strong>
+            OpenHands is a quiet signal—but it’s not passive. It means:{" "}
+            <em>I’m willing to help.</em> This is a community symbol. A wearable
+            gesture.
+          </strong>
         </p>
         <blockquote>
-          "You’re safe with me. If you’re in need, I will try to help."
+          "You’re safe with me. If you’re in need—I will not look away."
         </blockquote>
         <p>
           Two open palms. That’s it. Kindness you can wear. Compassion without
@@ -106,6 +111,12 @@ function Main() {
           sees your pin and dares to ask, “Can you help me?” For the version of
           you who once needed it.
         </p>
+        <p>
+          OpenHands doesn’t mean you’re perfect, or that you always know what to
+          do. It means you’re willing. Willing to stand up. Willing to say
+          “you’re not alone.” That willingness—that <em>choice</em> to care—is
+          what changes the world.
+        </p>
       </section>
 
       {/* <section>
@@ -136,8 +147,6 @@ function Main() {
           </a>
         </div>
       </section> */}
-
-      <hr />
 
       <footer>
         <p className="footer-message">
